@@ -1,0 +1,462 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.56752329bce6e4e22f7f.css" data-identity="gatsby-global-css">:root{--color-primary:#3eb0ef;--color-base:#15171a;--color-secondary:#5b7a81;--color-border:#c7d5d8;--color-bg:#f5f5f5;--font-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;--font-serif:Georgia,Times,serif;--font-mono:Menlo,Courier,monospace;--font-light:100;--font-normal:400;--font-bold:700;--font-heavy:800;--height:4rem;--margin:2rem;--radius:0.6rem}a,abbr,acronym,address,applet,article,aside,audio,big,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,ul,var,video{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}img{max-width:100%}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;box-sizing:border-box;font-family:sans-serif}*,:after,:before{box-sizing:inherit}a{background-color:transparent}a:active,a:hover{outline:0}b,strong{font-weight:700}dfn,em,i{font-style:italic}h1{font-size:2em;margin:.67em 0}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}mark{background-color:#fdffb6}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{border:none;overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input:focus{outline:none}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}legend{border:0;padding:0}textarea{overflow:auto}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}html{-webkit-tap-highlight-color:rgba(0,0,0,0);background:var(--color-base);font-size:62.5%;overflow-y:scroll}body,html{overflow-x:hidden}body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-moz-font-feature-settings:"liga" on;background:#fff;color:#3c484e;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:1.5rem;font-style:normal;font-weight:400;letter-spacing:0;line-height:1.6em}::selection{background:#cbeafb;text-shadow:none}hr{border:0;border-top:1px solid #e3e9ed;display:block;height:1px;margin:1.8em 0 2.4em;padding:0;position:relative;width:100%}audio,canvas,iframe,img,svg,video{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}blockquote,dl,ol,p,ul{margin:0 0 1.5em}ol,ul{padding-left:1.3em;padding-right:1.5em}ol ol,ol ul,ul ol,ul ul{margin:.5em 0 1em}ul{list-style:disc}ol{list-style:decimal}ol,ul{max-width:100%}li{line-height:1.6em;margin:.5em 0;padding-left:.3em}dt{float:left;font-weight:500;margin:0 20px 0 0;text-align:right;width:120px}dd{margin:0 0 5px;text-align:left}blockquote{border-left:.5em solid #cbeafb;margin:.3em 0 1.8em;padding:0 1.6em}blockquote p{font-size:1.2em;font-weight:300;margin:.8em 0}blockquote small{display:inline-block;font-size:.9em;margin:.8em 0 .8em 1.5em;opacity:.8}blockquote small:before{content:"\2014 \00A0"}blockquote cite{font-weight:700}blockquote cite a{font-weight:400}a{color:#26a8ed;text-decoration:none}a:hover{text-decoration:underline}h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility;color:var(--color-base);font-weight:700;line-height:1.15;margin-top:0}h1{font-size:4rem;font-weight:700;margin:0 0 .5em}@media (max-width:500px){h1{font-size:2rem}}h2{font-size:2rem;margin:1.5em 0 .5em}@media (max-width:500px){h2{font-size:1.8rem}}h3{font-size:1.8rem;font-weight:500;margin:1.5em 0 .5em}@media (max-width:500px){h3{font-size:1.7rem}}h4{font-size:1.6rem;font-weight:500;margin:1.5em 0 .5em}h5,h6{font-size:1.4rem;font-weight:500;margin:1.5em 0 .5em}.viewport{display:flex;flex-direction:column;justify-content:space-between;min-height:100vh}.container{margin:0 auto;max-width:1120px;padding:0 4vw}.content{font-size:2rem;line-height:1.7em;margin:0 auto}.content-body{display:flex;flex-direction:column;font-family:var(--font-serif)}.post-full-content{background:#fff;margin:0 auto;max-width:720px}.post-feature-image img{height:500px;margin:0 0 3vw;-o-object-fit:cover;object-fit:cover;width:100%}.content-body h1,.content-body h2,.content-body h3,.content-body h4,.content-body h5,.content-body h6{font-family:var(--font-sans-serif)}.content-body h1{font-size:3.4rem;font-weight:700;margin:1em 0 .5em}@media (max-width:500px){.content-body h1{font-size:2.8rem}}.content-title{font-size:5rem;margin:0 0 .8em}@media (max-width:500px){.content-title{font-size:3.4rem;margin:.8em 0}.content{font-size:1.8rem}}.content-body h2{font-size:3.2rem;font-weight:700;margin:.8em 0 .4em}@media (max-width:500px){.content-body h2{font-size:2.6rem}}.content-body h3{font-size:2.8rem;font-weight:700;margin:.5em 0 .2em}@media (max-width:500px){.content-body h3{font-size:2.2rem}}.content-body h4{font-size:2.4rem;font-weight:700;margin:.5em 0 .2em}@media (max-width:500px){.content-body h4{font-size:2.2rem}}.content-body h5{border:0;color:var(--color-primary);display:block;font-family:Georgia,serif;font-size:3.2rem;font-style:italic;line-height:1.35em;margin:.5em 0;padding:1em 0 1.5em;text-align:center}.content-body h6{font-size:2rem;font-weight:700;margin:.5em 0 .2em}.content-body figure{font-size:2.8rem;font-weight:700;margin:.4em 0 1.6em}.content-body pre{border-radius:12px;font-size:1.6rem;line-height:1.4em;margin:.4em 0 1.8em;padding:20px;white-space:pre-wrap}.content-body pre,.site-head{background:var(--color-base);color:#fff}.site-head{background-position:50%;background-size:cover;padding-bottom:20px;padding-top:20px}.site-nav-item{color:#fff;display:inline-block;opacity:.7;padding:5px 10px}.site-nav-item:hover{opacity:1;text-decoration:none}.site-nav-icon{height:15px;margin:-5px 0 0}.site-logo{height:25px}.site-mast{justify-content:space-between}.site-mast,.site-mast-right{align-items:center;display:flex}.site-mast-right .site-nav-item:last-child{padding-right:0}.site-banner{margin:0 auto;max-width:80%;padding:10vw 0;text-align:center}.site-banner-title{color:#fff;font-size:4rem;line-height:1.3em;margin:0;padding:0}.site-banner-desc{font-size:2.4rem;line-height:1.3em;margin:5px 0 0;opacity:.7;padding:0}.site-nav{align-items:center;display:flex;justify-content:space-between;margin:15px 0 0}.site-nav-left{margin:0 20px 0 -10px}.site-nav-button{border:1px solid #fff;border-radius:var(--radius);color:#fff;display:inline-block;font-size:1.3rem;line-height:1em;opacity:.7;padding:5px 10px}.site-nav-button:hover{text-decoration:none}.site-main{padding:4vw 0}.post-feed{grid-gap:30px;display:grid;grid-template-columns:1fr 1fr 1fr;justify-content:space-between}@media (max-width:980px){.post-feed{grid-template-columns:1fr 1fr}}@media (max-width:680px){.post-feed{grid-template-columns:1fr}}.post-card{color:inherit}.post-card,.post-card:hover{text-decoration:none}.post-card-tags{color:var(--color-secondary);font-size:1.4rem;line-height:1.15em;margin:0 0 5px}.post-card-title{margin:0 0 10px;padding:0}.post-card-excerpt{font-size:1.6rem;line-height:1.55em}.post-card-image{background:var(--color-secondary) no-repeat center center;background-size:cover;height:200px;margin:0 0 10px;width:auto}.post-card-footer{color:var(--color-secondary);justify-content:space-between;margin:10px 0 0}.post-card-footer,.post-card-footer-left{align-items:center;display:flex}.post-card-footer-right{display:flex;flex-direction:column}.post-card-avatar{align-items:center;border-radius:100%;display:flex;height:30px;justify-content:center;margin:0 7px 0 0;width:30px}.post-card-avatar .author-profile-image{background:var(--color-secondary);border-radius:100%;display:block;-o-object-fit:cover;object-fit:cover;width:100%}.post-card-avatar .default-avatar{width:26px}.tag-header{margin:0 0 4vw;max-width:690px}.tag-header h1{margin:0 0 1rem}.tag-header p{color:var(--color-secondary);font-size:2.2rem;line-height:1.3em;margin:0}@media (max-width:500px){.tag-header{border-bottom:1px solid var(--color-bg);padding-bottom:4vw}.tag-header p{font-size:1.7rem}}.author-header{display:flex;justify-content:space-between;margin:0 0 4vw}.author-header h1{margin:0 0 1rem}.author-header p{color:var(--color-secondary);font-size:2.2rem;line-height:1.3em;margin:0}.author-header-image{border-radius:100%;flex:0 0 auto;height:120px;margin:0 0 0 4vw;overflow:hidden;width:120px}.author-header-meta{display:flex;margin:1rem 0 0}.author-header-item{display:block;padding:2px 10px}.author-header-item:first-child{padding-left:0}@media (max-width:500px){.author-header{border-bottom:1px solid var(--color-bg);padding-bottom:4vw}.author-header p{font-size:1.7rem}.author-header-image{height:80px;width:80px}}.pagination{align-items:center;display:flex;justify-content:space-between;margin:4vw 0 0;position:relative}.pagination a{border:1px solid var(--color-border);border-radius:var(--radius);color:var(--color-secondary);display:inline-block;font-size:1.4rem;line-height:1em;padding:10px 15px;text-decoration:none}.pagination-location{color:var(--color-secondary);font-size:1.3rem;left:50%;margin-left:-50px;position:absolute;text-align:center;width:100px}.site-foot{background:var(--color-base);color:rgba(255,255,255,.7);font-size:1.3rem;padding:20px 0 40px}.site-foot-nav{align-items:center;display:flex;justify-content:space-between}.site-foot-nav a{color:rgba(255,255,255,.7)}.site-foot-nav a:hover{color:#fff;text-decoration:none}.site-foot-nav-right a{display:inline-block;padding:2px 5px}.site-foot-nav-right a:last-child{padding-right:0}.kg-bookmark-card{margin-top:0;width:100%}.kg-bookmark-container{border-radius:3px;display:flex;font-family:var(--font-sans-serif);min-height:148px}.kg-bookmark-container,.kg-bookmark-container:hover{box-shadow:0 2px 5px -1px rgba(0,0,0,.15),0 0 1px rgba(0,0,0,.09);color:var(--color-base);text-decoration:none}.kg-bookmark-content{align-items:flex-start;display:flex;flex-direction:column;flex-grow:1;justify-content:flex-start;padding:20px}.kg-bookmark-title{color:color(var(--color-secondary) l(-30%));font-size:1.6rem;font-weight:600;line-height:1.5em;transition:color .2s ease-in-out}.kg-bookmark-container:hover .kg-bookmark-title{color:var(--color-primary)}.kg-bookmark-description{-webkit-line-clamp:2;-webkit-box-orient:vertical;color:color(var(--color-secondary) l(-10%));display:-webkit-box;font-size:1.5rem;font-weight:400;line-height:1.5em;margin-top:12px;max-height:48px;overflow-y:hidden}.kg-bookmark-thumbnail{max-height:100%;min-width:33%;position:relative}.kg-bookmark-thumbnail img{border-radius:0 3px 3px 0;height:100%;left:0;-o-object-fit:cover;object-fit:cover;position:absolute;top:0;width:100%}.kg-bookmark-metadata{align-items:center;color:color(var(--color-secondary) l(-10%));display:flex;flex-wrap:wrap;font-size:1.5rem;font-weight:400;margin-top:14px}.kg-bookmark-icon{height:22px;margin-right:8px;width:22px}.kg-bookmark-author{line-height:1.5em}.kg-bookmark-author:after{content:"•";margin:0 6px}.kg-bookmark-publisher{line-height:1.5em;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.kg-gallery-container{display:flex;flex-direction:column;max-width:1040px;width:100%}.kg-gallery-row{display:flex;flex-direction:row;justify-content:center}.kg-gallery-image img{display:block;height:100%;margin:0;width:100%}.kg-gallery-row:not(:first-of-type){margin:.75em 0 0}.kg-gallery-image:not(:first-of-type){margin:0 0 0 .75em}.kg-gallery-card+.kg-gallery-card,.kg-gallery-card+.kg-image-card.kg-width-wide,.kg-image-card.kg-width-wide+.kg-gallery-card,.kg-image-card.kg-width-wide+.kg-image-card.kg-width-wide{margin:-2.25em 0 3em}</style><meta name="generator" content="Gatsby 3.10.2"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#15171A"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"/><link rel="alternate" type="application/rss+xml" href="/rss"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><title data-react-helmet="true">GraphQL on Rails:
+From zero to the first query</title><link data-react-helmet="true" rel="canonical" href="http://localhost:8000/graphql-on-rails-from-zero-to-the-first-query/"/><meta data-react-helmet="true" name="description" content="A hitchhiker’s guide to developing GraphQL applications with Rails on the
+backend side and React/Apollo on the frontend side. Follow this multi-part
+tutorial to learn both the basics and the advanced topics by example and feel
+the power of this modern technology.
+
+GraphQL [https://graphql.org/] is one of those new shiny things we’ve been
+seeing here, there and everywhere: blog posts
+[https://dev.to/evilmartians/exposing-permissions-in-graphql-apis-with-action-policy-536a-temp-slug-455298?preview"/><meta data-react-helmet="true" property="og:site_name" content="IRON"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" property="og:title" content="GraphQL on Rails:
+From zero to the first query"/><meta data-react-helmet="true" property="og:description" content="A hitchhiker’s guide to developing GraphQL applications with Rails on the
+backend side and React/Apollo on the frontend side. Follow this multi-part
+tutorial to learn both the basics and the advanced topics by example and feel
+the power of this modern technology.
+
+GraphQL [https://graphql.org/] is one of those new shiny things we’ve been
+seeing here, there and everywhere: blog posts
+[https://dev.to/evilmartians/exposing-permissions-in-graphql-apis-with-action-policy-536a-temp-slug-455298?preview"/><meta data-react-helmet="true" property="og:url" content="http://localhost:8000/graphql-on-rails-from-zero-to-the-first-query/"/><meta data-react-helmet="true" property="article:published_time" content="2021-08-31T17:45:05.000+07:00"/><meta data-react-helmet="true" property="article:modified_time" content="2021-08-31T17:45:04.000+07:00"/><meta data-react-helmet="true" name="twitter:title" content="GraphQL on Rails:
+From zero to the first query"/><meta data-react-helmet="true" name="twitter:description" content="A hitchhiker’s guide to developing GraphQL applications with Rails on the
+backend side and React/Apollo on the frontend side. Follow this multi-part
+tutorial to learn both the basics and the advanced topics by example and feel
+the power of this modern technology.
+
+GraphQL [https://graphql.org/] is one of those new shiny things we’ve been
+seeing here, there and everywhere: blog posts
+[https://dev.to/evilmartians/exposing-permissions-in-graphql-apis-with-action-policy-536a-temp-slug-455298?preview"/><meta data-react-helmet="true" name="twitter:url" content="http://localhost:8000/graphql-on-rails-from-zero-to-the-first-query/"/><meta data-react-helmet="true" name="twitter:label1" content="Written by"/><meta data-react-helmet="true" name="twitter:data1" content="IRON"/><meta data-react-helmet="true" name="twitter:site" content="https://twitter.com/ghost/"/><meta data-react-helmet="true" name="twitter:creator" content="@ghost"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:image" content="https://iron.fordeer.agency/content/images/2021/08/cover-41f83d0.png"/><meta data-react-helmet="true" property="og:image" content="https://iron.fordeer.agency/content/images/2021/08/cover-41f83d0.png"/><meta data-react-helmet="true" property="og:image:width" content="1000"/><meta data-react-helmet="true" property="og:image:height" content="523"/><script data-react-helmet="true" type="application/ld+json">{
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+        "@type": "Person",
+        "name": "IRON",
+        "image": "https://iron.fordeer.agency/content/images/2021/08/T-Banners-Icons-S14-HighTowerTomato-L.png"
+    },
+    "headline": "GraphQL on Rails:\nFrom zero to the first query",
+    "url": "http://localhost:8000/graphql-on-rails-from-zero-to-the-first-query/",
+    "datePublished": "2021-08-31T17:45:05.000+07:00",
+    "dateModified": "2021-08-31T17:45:04.000+07:00",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://iron.fordeer.agency/content/images/2021/08/cover-41f83d0.png",
+        "width": 1000,
+        "height": 523
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "IRON",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:8000/favicon.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "description": "A hitchhiker’s guide to developing GraphQL applications with Rails on the\nbackend side and React/Apollo on the frontend side. Follow this multi-part\ntutorial to learn both the basics and the advanced topics by example and feel\nthe power of this modern technology.\n\nGraphQL [https://graphql.org/] is one of those new shiny things we’ve been\nseeing here, there and everywhere: blog posts\n[https://dev.to/evilmartians/exposing-permissions-in-graphql-apis-with-action-policy-536a-temp-slug-455298?preview",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:8000"
+    }
+}</script><style data-react-helmet="true" type="text/css">null</style><link as="script" rel="preload" href="/webpack-runtime-4b0c08519e9b01b13ec7.js"/><link as="script" rel="preload" href="/framework-2763409ca69a4f35f52d.js"/><link as="script" rel="preload" href="/app-70057629ec7fe707224c.js"/><link as="script" rel="preload" href="/963770468657bcef9bfd35ecdfa091b18a4c2f64-6b2b27b7cee187fe53bc.js"/><link as="script" rel="preload" href="/cb7ff614a03144592d7181ec1b235ec5408e91ad-3966412f7062066ccaa8.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-08283f1381365564b879.js"/><link as="fetch" rel="preload" href="/page-data/graphql-on-rails-from-zero-to-the-first-query/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/176528973.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2358152166.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2561578252.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2731221146.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/4145280475.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="viewport"><div class="viewport-top"><header class="site-head" style="background-image:url(https://static.ghost.org/v4.0.0/images/publication-cover.jpg)"><div class="container"><div class="site-mast"><div class="site-mast-left"><a href="/"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:30px;height:30px"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABpElEQVQ4y61UbS9CYRju/zSiUjrVOdU5FVGhF8qalcWG1fDFR5vGrJGXj4xhNT77gAltDWP+kEWX3U9OrHnp0Idr57p37l3Pdb88j0ovSK96Qaq2CBUVER0vQi9I/4Gs8aJ6V0YL3H0p+HeHPwnKLeiyOeuQ/8m8oU3fC8qJnRY71AYL1EYL1AYzNJwArdXBYvo2iP7skMRsHj/GZ2aRmE5jIjWP/lAUnNSL+FQanNNTF/1VkEpq6+YxHE/i/KqE04sirst3WFjMwD0YZrF7KMwcKypZaxUZl9Fu4lnp5EzOaapkctjOCRiMjmEvf4zdwwJ2DvLYPSpgP3/CuOgdQofZ1vyUKdkTHMHy2iYy2RxWN7axkttifCm7DsHjY31WtDZGhxuSLwCnP1ifsGsgxNxRFU2vTW0oVkQSk7gslVG+f0QglkAyNYfbhyecFW/YcDScgpLJDa2Id3gUvpEYTGIPLO4++CMx9IejMNpdyhebRGmyBOL1mBOUTfmrq/f52im+eq16HKote750gljV8RLohL/io1U1hxUipP4fkIaOl57fABjyy0nRz/fhAAAAAElFTkSuQmCC" alt="IRON" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/1f5512e171759c8fa66fde174ad5e09e/91664/ghost-icon.png 1x,
+/static/1f5512e171759c8fa66fde174ad5e09e/ad39b/ghost-icon.png 1.5x,
+/static/1f5512e171759c8fa66fde174ad5e09e/183c2/ghost-icon.png 2x" /><img loading="lazy" width="30" height="30" srcset="/static/1f5512e171759c8fa66fde174ad5e09e/91664/ghost-icon.png 1x,
+/static/1f5512e171759c8fa66fde174ad5e09e/ad39b/ghost-icon.png 1.5x,
+/static/1f5512e171759c8fa66fde174ad5e09e/183c2/ghost-icon.png 2x" src="/static/1f5512e171759c8fa66fde174ad5e09e/91664/ghost-icon.png" alt="IRON" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></a></div><div class="site-mast-right"><a href="https://twitter.com/ghost" class="site-nav-item" target="_blank" rel="noopener noreferrer"><img class="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter"/></a><a href="https://www.facebook.com/ghost" class="site-nav-item" target="_blank" rel="noopener noreferrer"><img class="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook"/></a><a class="site-nav-item" href="https://feedly.com/i/subscription/feed/http://localhost:8000/rss/" target="_blank" rel="noopener noreferrer"><img class="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed"/></a></div></div><nav class="site-nav"><div class="site-nav-left"><a class="site-nav-item" href="/">Home</a><a class="site-nav-item" href="/about/">About</a><a class="site-nav-item" href="/tag/getting-started/">Collection</a><a class="site-nav-item" href="/author/ghost/">Author</a><a class="site-nav-item" href="/portal/">Portal</a></div><div class="site-nav-right"><a class="site-nav-button" href="/about">About</a></div></nav></div></header><main class="site-main"><div class="container"><article class="content"><figure class="post-feature-image"><img src="https://iron.fordeer.agency/content/images/2021/08/cover-41f83d0.png" alt="GraphQL on Rails:
+From zero to the first query"/></figure><section class="post-full-content"><h1 class="content-title">GraphQL on Rails:
+From zero to the first query</h1><section class="content-body load-external-scripts"><p>A hitchhiker’s guide to developing GraphQL applications with Rails on the backend side and React/Apollo on the frontend side. Follow this multi-part tutorial to learn both the basics and the advanced topics by example and feel the power of this modern technology.</p><p><a href="https://graphql.org/">GraphQL</a> is one of those new shiny things we’ve been seeing here, there and everywhere: <a href="https://dev.to/evilmartians/exposing-permissions-in-graphql-apis-with-action-policy-536a-temp-slug-455298?preview=5921586e85991fd5515f56b0ab8401d5fa1acb757e53ffc9c32c06243664d434f816c731482815c58f8a058def1cc2ae05638aacfce6c09d473010dc">blog posts</a>, <a href="https://www.graphqlconf.org/">conferences</a>, <a href="https://graphqlradio.com/">podcasts</a>, maybe, even newspapers. It sounds like you should hurry up and start rewriting your application in GraphQL instead of REST as soon as possible, right? Not exactly. Remember: there is no silver bullet. It’s essential to understand the pros and cons of the technology before making a paradigm-shift decision.</p><p>Check out <a href="https://evilmartians.com/chronicles/graphql-on-rails-2-updating-the-data">Part 2</a> and <a href="https://evilmartians.com/chronicles/graphql-on-rails-3-on-the-way-to-perfection">Part 3</a></p><p>In this series, we’re going to walk you through a no-frills guide to the development of GraphQL applications, talking about not only its advantages but also its caveats and pitfalls (and, of course, the ways to deal with them).</p><h2 id="graphql-in-a-nutshell">GraphQL in a nutshell</h2><p>There are a lot of other query languages, for instance, SQL and XPath.</p><p>According to the <a href="https://graphql.github.io/graphql-spec/">specification</a>, GraphQL is a <em>query language</em> and <em>runtime</em> (or <em>execution engine</em>). Query language, <a href="https://en.wikipedia.org/wiki/Query_language">by definition</a>, describes how to communicate with an information system. Runtime is responsible for fulfilling queries with data.</p><p>At the core of every GraphQL application lies a <a href="https://graphql.org/learn/schema/"><em>schema</em></a>: it describes the underlying data in the form of a directed graph. The runtime must execute queries according to the schema (and some general rules from the specification). That means, every valid GraphQL server runs queries in the same manner and returns data in the same format for the same schema. In other words, the schema is everything clients should know about the API.</p><p>Here is an example of a simple GraphQL query:</p><pre><code>query getProduct($id: Int!) {
+  product(id: $id) {
+    id
+    title
+    manufacturer {
+      name
+    }
+  }
+}
+</code></pre><p>Let’s dissect it line by line:</p><ul><li>We define a named query (<code>getProduct</code> is the operation name) accepting a single argument (<code>$id</code>). The operation name is optional, but it helps readability and could be used by frontend for caching.</li><li>We “select” the <code>product</code> field from the “root” of the schema and pass the <code>$id</code> value as an argument.</li><li>We describe the fields we want to fetch: in this case, we want to get the <code>id</code> and <code>title</code> of the product as well as the <code>name</code> of the manufacturer.</li></ul><blockquote>Essentially, a query represents a sub-graph of the schema, which brings the first benefit of GraphQL—we can fetch only this data we need and all we need at once, in a single query.</blockquote><p>Check out <a href="https://stackoverflow.com/questions/44564905/what-is-over-fetching-or-under-fetching">this Stack Overflow post</a> to learn more about both overfetching and underfetching.</p><p>This way, we solve one of the common problems of the traditional REST APIs—<em>overfetching</em>.</p><p>Another noticeable feature of GraphQL schemas is they are <em>strongly</em> <em>typed</em>: both client and runtime ensure that the data passed is valid from the perspective of the application’s type system. For example, if someone mistakenly passes a string value as the <code>$id</code> to the query above, the client fails with the exception without even trying to perform a request.</p><p>There are plenty of tools to convert a schema into an interactive documentation website, standalone (e.g., <a href="https://github.com/graphql/graphiql">GraphiQL</a> or <a href="https://2fd.github.io/graphdoc">graphdoc</a>) and framework-specific (e.g., <a href="https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm">Apollo DevTools</a>).</p><p>And the last but not least bonus is a <em>schema</em> <em>introspection</em>: clients can learn the API from the schema itself, without any additional documentation sources.</p><p>We’ve just learned a bunch of theoretical aspects of GraphQL. Now it’s time to do some coding exercises to make sure you won’t forget everything tomorrow’s morning.</p><h2 id="what-are-we-going-to-build">What are we going to build?</h2><p>During this series, we will be building an application representing a “Martian Library”—a personal online collection of movies, books, and other art objects related to the Red Planet.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://iron.fordeer.agency/content/images/2021/08/application-32576ed.png" class="kg-image" alt="The application we are going to build" loading="lazy" width="1600" height="713" srcset="https://iron.fordeer.agency/content/images/size/w600/2021/08/application-32576ed.png 600w, https://iron.fordeer.agency/content/images/size/w1000/2021/08/application-32576ed.png 1000w, https://iron.fordeer.agency/content/images/2021/08/application-32576ed.png 1600w" sizes="(min-width: 720px) 720px"><figcaption><p style="margin: 0px;">The application we are going to&nbsp;build</p></figcaption></figure><p>For this tutorial, we’re going to use:</p><ul><li>Ruby 2.6 and Rails 6 (<a href="https://evilmartians.com/chronicles/rails-6-b-sides-and-rarities">release candidate is already here</a>) for backend.</li><li>Node.js 9+, React 16.3+, and Apollo (client version 2+) for frontend (and make sure you have yarn installed according to the <a href="https://yarnpkg.com/en/docs/install#mac-stable">instruction</a>).</li></ul><p>You can find the source code <a href="https://github.com/evilmartians/chronicles-gql-martian-library/tree/part-1">here</a>—don’t forget to run <code>bundle install &amp;&amp; yarn install</code> before the first run. <a href="https://github.com/evilmartians/chronicles-gql-martian-library">Master</a> represents a current state of the project.</p><h2 id="setting-up-a-new-rails-project">Setting up a new Rails project</h2><p>If at the time of reading this article Rails 6.0 hasn’t been released yet, you might need to install the release candidate first:</p><pre><code>$ gem install rails --pre
+$ rails -v
+=&gt; Rails 6.0.0.rc1
+</code></pre><p>Now we’re ready to run this unexpectedly long <code>rails new</code> command:</p><pre><code>$ rails new martian-library -d postgresql --skip-action-mailbox --skip-action-text --skip-spring --webpack=react -T --skip-turbolinks
+</code></pre><p>We prefer <em>okonomi</em> to <a href="https://dhh.dk/2012/rails-is-omakase.html"><em>omakase</em></a>: skip frameworks and libraries we don’t need, choose PostgreSQL as our database, preconfigure Webpacker to use React, and skip tests (don’t worry–we’ll add RSpec soon).</p><p>Before you start, it’s strongly recommended that you disable all the unnecessary generators in the  <code>config/application.rb</code>:</p><pre><code>config.generators do |g|
+  g.test_framework  false
+  g.stylesheets     false
+  g.javascripts     false
+  g.helper          false
+  g.channel         assets: false
+end
+</code></pre><h2 id="preparing-the-data-model">Preparing the data model</h2><p>We need at least two models to start:</p><ul><li><code>Item</code> to describe any entity (book, movie, etc.) that we want to store in the library</li><li><code>User</code> to represent the application user who can manage items in the collection.</li></ul><p>Let’s generate them:</p><pre><code>$ rails g model User first_name last_name email
+$ rails g model Item title description:text image_url user:references
+</code></pre><p>Don’t forget to add the <code>has_many :items</code> association to <code>app/models/user.rb</code>:</p><pre><code># app/models/user.rb
+class User &lt; ApplicationRecord
+  has_many :items, dependent: :destroy
+end
+</code></pre><p>Let’s add some pre-generated data to <code>db/seeds.rb</code>:</p><pre><code># db/seeds.rb
+john = User.create!(
+  email: "john.doe@example.com",
+  first_name: "John",
+  last_name: "Doe"
+)
+
+jane = User.create!(
+  email: "jane.doe@example.com",
+  first_name: "Jane",
+  last_name: "Doe"
+)
+
+Item.create!(
+  [
+    {
+      title: "Martian Chronicles",
+      description: "Cult book by Ray Bradbury",
+      user: john,
+      image_url: "https://upload.wikimedia.org/wikipedia/en/4/45/The-Martian-Chronicles.jpg"
+    },
+    {
+      title: "The Martian",
+      description: "Novel by Andy Weir about an astronaut stranded on Mars trying to survive",
+      user: john,
+      image_url: "https://upload.wikimedia.org/wikipedia/en/c/c3/The_Martian_2014.jpg"
+    },
+    {
+      title: "Doom",
+      description: "A group of Marines is sent to the red planet via an ancient " \
+                   "Martian portal called the Ark to deal with an outbreak of a mutagenic virus",
+      user: jane,
+      image_url: "https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg"
+    },
+    {
+      title: "Mars Attacks!",
+      description: "Earth is invaded by Martians with unbeatable weapons and a cruel sense of humor",
+      user: jane,
+      image_url: "https://upload.wikimedia.org/wikipedia/en/b/bd/Mars_attacks_ver1.jpg"
+    }
+  ]
+)
+</code></pre><p>Finally, we’re ready to initialize our database:</p><pre><code>$ rails db:create db:migrate db:seed
+</code></pre><p>Now that we’ve put some information into our system, let’s add a way to access it!</p><h2 id="adding-a-graphql-endpoint">Adding a GraphQL endpoint</h2><p>For crafting our GraphQL API, we will use the <a href="https://github.com/rmosolgo/graphql-ruby">graphql-ruby</a> gem:</p><pre><code># First, add it to the Gemfile
+$ bundle add graphql --version="~&gt; 1.9"
+# Then, run the generator
+$ rails generate graphql:install
+</code></pre><p>You might be surprised by the number of files a minimal <code>graphql-ruby</code> application requires: this boilerplate is the price we pay for all the goodies we described above.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://cdn.evilmartians.com/front/posts/graphql-on-rails-1-from-zero-to-the-first-query/generator-d6a5280.png" class="kg-image" alt="The result of executing generator" loading="lazy"><figcaption><p style="margin: 0px;">The result of&nbsp;executing <code style="font-family: &quot;Fira Code&quot;, &quot;Lucida Console&quot;, Monaco, monospace; font-size: 1em; color: rgb(191, 108, 53); font-feature-settings: &quot;calt&quot;; text-rendering: optimizelegibility; white-space: pre-wrap;">graphql:install</code> generator</p></figcaption></figure><p>First of all, let’s take a look at the schema, <code>martian_library_schema.rb</code>:</p><pre><code># app/graphql/martian_library_schema.rb
+class MartianLibrarySchema &lt; GraphQL::Schema
+  query(Types::QueryType)
+  mutation(Types::MutationType)
+end
+</code></pre><p>The schema declares that all the queries should go to <code>Types::QueryType</code> while mutations should go to <code>Types::MutationType</code>. We’re going to dig deeper into mutations in the second part of the series; the goal of this article is to learn how to write and execute queries. Thus, let’s open the <code>types/query_type.rb</code> class—it is an entry point for all the queries. What’s inside?</p><pre><code># app/graphql/types/query_type.rb
+module Types
+  class QueryType &lt; Types::BaseObject
+    # Add root-level fields here.
+    # They will be entry points for queries on your schema.
+
+    # TODO: remove me
+    field :test_field, String, null: false,
+      description: "An example field added by the generator"
+    def test_field
+      "Hello World!"
+    end
+  end
+end
+</code></pre><p>It turns out that <code>QueryType</code> is just a regular type: it inherits from the <code>Types::BaseObject</code> (which we will use as a base class for all types), and it has <em>field</em> definitions–the nodes of our data graph. The only thing that makes <code>QueryType</code> different is that GraphQL requires this type to exist (while <em>mutation</em> and <em>subscription</em> types are optional).</p><p>Have noticed that the code above is actually a “hello world” app? Before going further (and boring you with by the amount of code), we’d like to show you how to get this “hello world” in your browser.</p><p>Let’s see what has been added to the <code>config/routes.rb</code> file by the generator:</p><pre><code># config/routes.rb
+Rails.application.routes.draw do
+  mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql" if Rails.env.development?
+  post "/graphql", to: "graphql#execute"
+end
+</code></pre><p>Mounting <code>GraphiQL::Rails::Engine</code> allows us to test our queries and mutations using a web interface called <a href="https://github.com/graphql/graphiql">GraphiQL</a>. As we discussed in the introduction, the schema can be inspected, and GraphiQL uses this feature to build interactive documentation for us. It’s time to give it a shot!</p><pre><code># Let's run a Rails web server
+$ rails s
+</code></pre><p>Open up <a href="http://localhost:3000/graphiql">http://localhost:3000/graphiql</a> in the browser:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://cdn.evilmartians.com/front/posts/graphql-on-rails-1-from-zero-to-the-first-query/graphiql-4633e9d.png" class="kg-image" alt="GraphiQL UI" loading="lazy"><figcaption><p style="margin: 0px;">GraphiQL UI</p></figcaption></figure><p>In the left pane, you can type a query to execute, then click the “play” button (or hit <em>Ctrl/Cmd+Enter</em>) and get the response in the right pane. By clicking the “Docs” link at the right top corner, you can explore your schema.</p><p>Let’s take a look at our logs—we want to know what happens when we click the execute button.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://cdn.evilmartians.com/front/posts/graphql-on-rails-1-from-zero-to-the-first-query/execute_log-e654371.png" class="kg-image" alt="Execution logs" loading="lazy"><figcaption><p style="margin: 0px;">Execution logs</p></figcaption></figure><p>GraphQL is transport-agnostic, but most implementations, including <code>ruby-graphql</code>, use HTTP POST requests.</p><p>Requests are sent to <code>GraphqlController</code>, which has also been added to the application by the <code>graphql</code> gem generator.</p><p>Take a look at the <code>GraphqlController#execute</code> action:</p><pre><code># app/controllers/graphql_controller.rb
+def execute
+  variables = ensure_hash(params[:variables])
+  query = params[:query]
+  operation_name = params[:operationName]
+  context = {
+    # Query context goes here, for example:
+    # current_user: current_user,
+  }
+  result = GraphqlSchema.execute(
+    query,
+    variables: variables,
+    context: context,
+    operation_name: operation_name
+  )
+  render json: result
+rescue StandardError =&gt; e
+  raise e unless Rails.env.development?
+
+  handle_error_in_development e
+end
+</code></pre><p>This action calls the <code>GraphqlSchema#execute</code> method with the following parameters:</p><ul><li><code>query</code> and <code>variables</code> represent a query string and arguments sent by a client respectively;</li><li><code>context</code> is an arbitrary hash, which will be available during the query execution everywhere;</li><li><code>operation_name</code> picks a named operation from the incoming request to execute (could be empty).</li></ul><p>All the magic happens inside this method: it parses the query, detects all the types that should be used for building the response, and resolves all the requested fields. The only thing we need to do is to define the types and declare how fields should be resolved.</p><h2 id="what%E2%80%99s-in-the-martian-library">What’s in the Martian Library?</h2><p>Let’s move from “hello world” to something real: remove the example contents from <code>Types::QueryType</code> and register a field called <code>:items</code> which will return all the items from the library. We also need to add a resolver method for this field (the resolver method name must match the field name):</p><pre><code># app/graphql/types/query_type.rb
+module Types
+  class QueryType &lt; Types::BaseObject
+    field :items,
+          [Types::ItemType],
+          null: false,
+          description: "Returns a list of items in the martian library"
+
+    def items
+      Item.all
+    end
+  end
+end
+</code></pre><p>Each field definition contains a name, a result type, and options; <code>:null</code> is required and must be set to either <code>true</code> or <code>false</code>. We also define optional <code>:description</code>—it’s a good practice to add a human-readable message to a field: it will be automatically added to documentation providing more context to developers. The array notation for the result type, <code>[Types::ItemType]</code>, means that the field value must be an array and each element of this array must be represented using the <code>Types::ItemType</code> type.</p><p>But we haven’t defined <code>ItemType</code> yet, right? Hopefully, the <code>graphql</code> gem will give us a handy generator:</p><pre><code>$ rails g graphql:object item
+</code></pre><p>Now we can modify the newly created <code>app/graphql/types/item_type.rb</code> to our liking.</p><pre><code># app/graphql/types/item_type.rb
+module Types
+  class ItemType &lt; Types::BaseObject
+    field :id, ID, null: false
+    field :title, String, null: false
+    field :description, String, null: true
+    field :image_url, String, null: true
+  end
+end
+</code></pre><p>You may use UUID as a primary key in your table if you are worried about exposing sequential IDs, but let’s go with the easy way now.</p><p>As you can see, we’re exposing three fields in <code>ItemType</code>:</p><ul><li>non-nullable fields <code>id</code> and <code>title</code></li><li>a nullable field <code>description</code></li></ul><p>Our execution engine resolves fields using the following algorithm (slightly simplified):</p><ul><li>First, it looks for the method with the same name defined in the type class itself (like we did earlier in the <code>QueryType</code> for <code>items</code>); we can access the object being resolved using the <code>object</code> method.</li><li>If no such method defined, it tries to call the method with the same name on the <code>object</code> itself.</li></ul><p>We do not define any methods in our type class; thus, we assume that the underlying implements all the fields’ methods.</p><p>Go back to <a href="http://localhost:3000/graphiql">http://localhost:3000/graphiql</a>, execute the following query, and make sure that you get the list of all items in response:</p><pre><code>{
+  items {
+    id
+    title
+    description
+  }
+}
+</code></pre><p>So far, we haven’t added any functionality that leverages the power of graphs—our current graph’s depth is one. Let’s grow the graph by adding a non-primitive node to <code>ItemType</code>, for example, a <code>user</code> field to represent the user who created the item:</p><pre><code># app/graphql/types/item_type.rb
+module Types
+  class ItemType &lt; Types::BaseObject
+    # ...
+    field :user, Types::UserType, null: false
+  end
+end
+</code></pre><p>Let’s repeat the same generator spell to create a new type class:</p><pre><code>$ rails g graphql:object user
+</code></pre><p>This time we also want to add a computed field—<code>full_name</code>:</p><pre><code># app/graphql/types/user_type.rb
+module Types
+  class UserType &lt; Types::BaseObject
+    field :id, ID, null: false
+    field :email, String, null: false
+    field :full_name, String, null: false
+
+    def full_name
+      # `object` references the user instance
+      [object.first_name, object.last_name].compact.join(" ")
+    end
+  end
+end
+</code></pre><p>Let’s transform our query to fetch users along with items:</p><pre><code>{
+  items {
+    id
+    title
+    user {
+      id
+      email
+    }
+  }
+}
+</code></pre><p>At this point, we’re ready to move our attention from the backend side to the frontend side. Let’s build a client for this API!</p><h2 id="configuring-the-frontend-application">Configuring the frontend application</h2><p>If you’re using Google Chrome, mind installing the Apollo <a href="https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm">extension</a>.</p><p>As we already mentioned, we recommend you install the <a href="https://www.apollographql.com/docs/react/">Apollo</a> framework for dealing with GraphQL client-side.</p><p>To get the ball rolling, we need to install all the required dependencies:</p><pre><code>$ yarn add apollo-client apollo-cache-inmemory apollo-link-http apollo-link-error apollo-link graphql graphql-tag react-apollo
+</code></pre><p>We didn’t include any package-adding types to JS (<a href="http://www.typescriptlang.org/">TypeScript</a> or <a href="https://flow.org/">Flow</a>) so as not to make this tutorial too complicated. In practice, using typed JS with GraphQL makes a lot of sense since we already have a types system. For instance, <a href="https://github.com/apollographql/apollo-tooling">apollo-codegen</a> can generate type signatures automatically.</p><p>Let’s take a look at some of the installed packages:</p><ul><li>We use <code>graphql-tag</code> to build our first queries.</li><li><code>apollo-client</code> is a generic framework-agnostic package for performing and caching GraphQL requests.</li><li><code>apollo-cache-inmemory</code> is a storage implementation for Apollo cache.</li><li><code>react-apollo</code> contains a set of React components for displaying data.</li><li><code>apollo-link</code> and other <em>links</em> implement a middleware pattern for <code>apollo-client</code> operations (you can find further details <a href="https://www.apollographql.com/docs/link/overview.html">here</a>).</li></ul><p>Now we need to create an entry point for our frontend application. Remove <code>hello_react.jsx</code> from the <code>packs</code> folder and add <code>index.js</code>:</p><pre><code>$ rm app/javascript/packs/hello_react.jsx &amp;&amp; touch app/javascript/packs/index.js
+</code></pre><p>For the sake of debugging, it’s good enough to stay with the following content:</p><pre><code>// app/javascript/packs/index.js
+console.log('👻');
+</code></pre><p>Let’s generate a controller to serve our frontend application:</p><pre><code>$ rails g controller Library index --skip-routes
+</code></pre><p>Update <code>app/views/library/index.html.erb</code> to contain the React root element and a link to our <em>pack</em>:</p><pre><code>&lt;!-- app/views/library/index.html.erb --&gt;
+&lt;div id="root" /&gt;
+&lt;%= javascript_pack_tag 'index' %&gt;
+</code></pre><p>Finally, let’s register a new route in the <code>config/routes.rb</code>:</p><pre><code># config/routes.rb
+root 'library#index'
+</code></pre><p>Restart your Rails server and make sure you see the ghost in the browser console. Don’t be scared.</p><h2 id="configuring-apollo">Configuring Apollo</h2><p>Create a file for storing our application’s Apollo config:</p><pre><code>$ mkdir -p app/javascript/utils &amp;&amp; touch app/javascript/utils/apollo.js
+</code></pre><p>In this file we want to configure the two core entities of the Apollo application, the client and the cache (or more precisely, the functions to create both):</p><pre><code>// app/javascript/utils/apollo.js
+
+// client
+import { ApolloClient } from 'apollo-client';
+// cache
+import { InMemoryCache } from 'apollo-cache-inmemory';
+// links
+import { HttpLink } from 'apollo-link-http';
+import { onError } from 'apollo-link-error';
+import { ApolloLink, Observable } from 'apollo-link';
+export const createCache = () =&gt; {
+  const cache = new InMemoryCache();
+  if (process.env.NODE_ENV === 'development') {
+    window.secretVariableToStoreCache = cache;
+  }
+  return cache;
+};
+</code></pre><p>Caching is one of the most powerful features of Apollo. Sometimes it becomes overpowering, and you might prefer a more straightforward solution. In any case, it’s worth learning how it works. Find more details about how Apollo caching works <a href="https://www.apollographql.com/docs/react/advanced/caching.html">here</a>.</p><p>Let’s take a second and look at how cache works.</p><p>Each query response is put into the cache (the corresponding request is used to generate the cache key). Before making a request, <code>apollo-client</code> ensures that the response hasn’t been cached yet, and if it has been–the request is not performed. This behavior is configurable: for instance, we can turn off caching for a particular request or ask the client to look for a cache entry of a different query.</p><p>One important thing we need to know about the cache mechanism for this tutorial is that, by default, a cache key is a concatenation of the object <code>id</code> and <code>__typename</code>. Thus, fetching the same object twice would result only in one request.</p><p>Back to coding. Since we use HTTP POST as a transport, we need to attach a proper CSRF token to every request to pass the <a href="https://guides.rubyonrails.org/security.html#cross-site-request-forgery-csrf">forgery protection check</a> in the Rails app. We can grab it from <code>meta[name="csrf-token"]</code> (which is generated by <code>&lt;%= csrf_meta_tags %&gt;</code>):</p><pre><code>// app/javascript/utils/apollo.js
+// ...
+// getToken from meta tags
+const getToken = () =&gt;
+  document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+const token = getToken();
+const setTokenForOperation = async operation =&gt;
+  operation.setContext({
+    headers: {
+      'X-CSRF-Token': token,
+    },
+  });
+// link with token
+const createLinkWithToken = () =&gt;
+  new ApolloLink(
+    (operation, forward) =&gt;
+      new Observable(observer =&gt; {
+        let handle;
+        Promise.resolve(operation)
+          .then(setTokenForOperation)
+          .then(() =&gt; {
+            handle = forward(operation).subscribe({
+              next: observer.next.bind(observer),
+              error: observer.error.bind(observer),
+              complete: observer.complete.bind(observer),
+            });
+          })
+          .catch(observer.error.bind(observer));
+        return () =&gt; {
+          if (handle) handle.unsubscribe();
+        };
+      })
+  );
+</code></pre><p>Let’s look at how we can log errors:</p><pre><code>// app/javascript/utils/apollo.js
+//...
+// log erors
+const logError = (error) =&gt; console.error(error);
+// create error link
+const createErrorLink = () =&gt; onError(({ graphQLErrors, networkError, operation }) =&gt; {
+  if (graphQLErrors) {
+    logError('GraphQL - Error', {
+      errors: graphQLErrors,
+      operationName: operation.operationName,
+      variables: operation.variables,
+    });
+  }
+  if (networkError) {
+    logError('GraphQL - NetworkError', networkError);
+  }
+})
+</code></pre><p>In production, it makes more sense to use an exception tracking service (e.g., Sentry or Honeybadger): just override the <code>logError</code> function to send errors to the external system.</p><p>We’re almost there—let’s tell the client about the endpoint for making queries:</p><pre><code>// app/javascript/utils/apollo.js
+//...
+// http link
+const createHttpLink = () =&gt; new HttpLink({
+  uri: '/graphql',
+  credentials: 'include',
+})
+</code></pre><p>Finally, we’re ready to create an Apollo client instance:</p><pre><code>// app/javascript/utils/apollo.js
+//...
+export const createClient = (cache, requestLink) =&gt; {
+  return new ApolloClient({
+    link: ApolloLink.from([
+      createErrorLink(),
+      createLinkWithToken(),
+      createHttpLink(),
+    ]),
+    cache,
+  });
+};
+</code></pre><h2 id="the-very-first-query">The very first query</h2><p>We’re going to use a <a href="https://reactjs.org/docs/context.html#contextprovider">provider pattern</a> to pass the client instances to React components:</p><pre><code>$ mkdir -p app/javascript/components/Provider &amp;&amp; touch app/javascript/components/Provider/index.js
+</code></pre><p>It’s the first time we are using an <code>ApolloProvider</code> component from the <code>react-apollo</code> library:</p><pre><code>// app/javascript/components/Provider/index.js
+import React from 'react';
+import { ApolloProvider } from 'react-apollo';
+import { createCache, createClient } from '../../utils/apollo';
+
+export default ({ children }) =&gt; (
+  &lt;ApolloProvider client={createClient(createCache())}&gt;
+    {children}
+  &lt;/ApolloProvider&gt;
+);
+</code></pre><p>Let’s change our <code>index.js</code> to use the newly created provider:</p><pre><code>// app/javascript/packs/index.js
+import React from 'react';
+import { render } from 'react-dom';
+import Provider from '../components/Provider';
+
+render(&lt;Provider&gt;👻&lt;/Provider&gt;, document.querySelector('#root'));
+</code></pre><p>If you use <code>Webpacker v3</code> you may need to import <code>babel-polyfill</code> to use all the cool JavaScript tricks like async/await. Don’t worry about the polyfill’s size; <code>babel-preset-env</code> will remove everything you don’t need.</p><p>Let’s create a <code>Library</code> component to display the list of items on the page:</p><pre><code>$ mkdir -p app/javascript/components/Library &amp;&amp; touch app/javascript/components/Library/index.js
+</code></pre><p>We’re going to use the <code>Query</code> component from <code>react-apollo</code>, which accepts the <code>query</code> string as a property to fetch the data on mount:</p><pre><code>// app/javascript/components/Library/index.js
+import React from 'react';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
+
+const LibraryQuery = gql`
+  {
+    items {
+      id
+      title
+      user {
+        email
+      }
+    }
+  }
+`;
+
+export default () =&gt; (
+  &lt;Query query={LibraryQuery}&gt;
+    {({ data, loading }) =&gt; (
+      &lt;div&gt;
+        {loading
+          ? 'loading...'
+          : data.items.map(({ title, id, user }) =&gt; (
+              &lt;div key={id}&gt;
+                &lt;b&gt;{title}&lt;/b&gt; {user ? `added by ${user.email}` : null}
+              &lt;/div&gt;
+            ))}
+      &lt;/div&gt;
+    )}
+  &lt;/Query&gt;
+);
+</code></pre><p>We can access the loading state and loaded data through the corresponding <code>loading</code> and <code>data</code> properties (passed using a so-called <a href="https://reactjs.org/docs/render-props.html">render-props pattern</a>).</p><p>Don’t forget to add the component to the main page:</p><pre><code>// app/javascript/packs/index.js
+import React from 'react';
+import { render } from 'react-dom';
+import Provider from '../components/Provider';
+import Library from '../components/Library';
+
+render(
+  &lt;Provider&gt;
+    &lt;Library /&gt;
+  &lt;/Provider&gt;,
+  document.querySelector('#root')
+);
+</code></pre><p>If you reload the page you should see the list of items with emails of users who added them:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://cdn.evilmartians.com/front/posts/graphql-on-rails-1-from-zero-to-the-first-query/items-b791b9f.png" class="kg-image" alt="List of items with emails of users" loading="lazy"><figcaption><p style="margin: 0px;">List of&nbsp;items with emails of&nbsp;users</p></figcaption></figure><p>Congratulations! You’ve just made the very first step towards GraphQL happiness!</p><h2 id="%E2%80%A6and-the-very-first-problem">…And the very first problem</h2><p>Everything seems to work fine, but let’s take a look at our server logs:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://cdn.evilmartians.com/front/posts/graphql-on-rails-1-from-zero-to-the-first-query/n_plus_one-77d1121.png" class="kg-image" alt="N + 1" loading="lazy"><figcaption><p style="margin: 0px;">N + 1</p></figcaption></figure><p>The SQL query <code>SELECT * FROM users WHERE id = ?</code> is executed <strong>four times</strong>, which means that we hit the famous <em>N+1 problem</em>–server makes a query for each item in the collection to get the corresponding user info.</p><p>Before fixing the problem, we need to make sure that it’s safe to make code modifications without breaking anything—let’s write some tests!</p><h2 id="writing-some-specs">Writing some specs</h2><p>Since we’re running on the edge, we need the upcoming version of the gem.</p><p>Now it’s time to install and configure RSpec, or more precisely, the <code>rspec-rails</code> gem:</p><pre><code># Add gem to the Gemfile
+$ bundle add rspec-rails --version="4.0.0.beta2" --group="development,test"
+# Generate the initial configuration
+$ rails generate rspec:install
+</code></pre><p>To make it easier to generate data for tests let’s install <a href="https://github.com/thoughtbot/factory_bot">factory_bot</a>:</p><pre><code>$ bundle add factory_bot_rails --version="~&gt; 5.0" --group="development,test"
+</code></pre><p>Make factory methods (<code>create</code>, <code>build</code>, etc.) globally visible in tests by adding <code>config.include FactoryBot::Syntax::Methods</code> to the <code>rails_helper.rb</code>.</p><p>Since we created our models before adding Factory Bot, we should generate our factories manually. Let’s create a single file, <code>spec/factories.rb</code>, for that:</p><pre><code># spec/factories.rb
+FactoryBot.define do
+  factory :user do
+    # Use sequence to make sure that the value is unique
+    sequence(:email) { |n| "user-#{n}@example.com" }
+  end
+
+  factory :item do
+    sequence(:title) { |n| "item-#{n}" }
+    user
+  end
+end
+</code></pre><p>Now we are ready to write our first test. Let’s create a spec file for <code>QueryType</code>:</p><pre><code>$ mkdir -p spec/graphql/types
+$ touch spec/graphql/types/query_type_spec.rb
+</code></pre><p>The simplest query test looks like this:</p><pre><code># spec/graphql/types/query_type_spec.rb
+require "rails_helper"
+
+RSpec.describe Types::QueryType do
+  describe "items" do
+    let!(:items) { create_pair(:item) }
+
+    let(:query) do
+      %(query {
+        items {
+          title
+        }
+      })
+    end
+
+    subject(:result) do
+      MartianLibrarySchema.execute(query).as_json
+    end
+
+    it "returns all items" do
+      expect(result.dig("data", "items")).to match_array(
+        items.map { |item| { "title" =&gt; item.title } }
+      )
+    end
+  end
+end
+</code></pre><p>Testing GraphQL might feel repetitive. Should it happen to you—consider using fixtures and the <a href="https://github.com/nepalez/fixturama">fixturama</a> gem.</p><p>First, we create a pair of items in our database. Then, we define the query under test and the subject (<code>result</code>) by calling the <code>GraphqlSchema.execute</code> method. Remember, we had a similar line in the <code>GraphqlController#execute</code>?</p><p>This example is very straightforward: we’re not passing either <code>variables</code> or <code>context</code> to the <code>execute</code> call, though we definitely can do that if needed.</p><p>Now we’re confident enough to fix “the bug”—the N+1 problem!</p><h2 id="graphql-vs-n1-problem">GraphQL vs. N+1 problem</h2><p>The easiest way to avoid N+1 queries is to use <a href="https://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations">eager loading</a>. In our case, we need to preload users when making a query to fetch items in <code>QueryType</code>:</p><pre><code># /app/graphql/types/query_type.rb
+module Types
+  class QueryType &lt; Types::BaseObject
+    # ...
+
+    def items
+      Item.preload(:user)
+    end
+  end
+end
+</code></pre><p>This solution can help in simple situations, but it’s not very efficient: the following code preloads users even if the client does not need them, e.g.:</p><pre><code>items {
+  title
+}
+</code></pre><p>Learn how to solve the N+1 problem using batch loading by example from the <a href="https://dev.to/evilmartians/active-storage-meets-graphql-pt-2-exposing-attachment-urls-2mdn">“Active Storage meets GraphQL”</a> post in our dev.to blog.</p><p>Discussing other ways to solve the N+1 problem is worthy of a dedicated post and out of this tutorial’s scope.<br>Most of the solutions fit the following two groups:</p><ul><li>lazy eager loading (e.g., using the <a href="https://github.com/DmitryTsepelev/ar_lazy_preload">ar_lazy_preload</a> gem)</li><li>batch loading (e.g., using the <a href="https://github.com/Shopify/graphql-batch">graphql-batch</a> gem)</li></ul><hr><p>That’s all for today! We learned a lot about GraphQL, completed all the routine work of configuring the backend and frontend applications, made the first query, and even found and fixed the first bug. And that’s just a tiny step (despite the size of the article) in our journey. We’ll come back shortly and unveil how to manipulate data using GraphQL mutations and keep it up-to-date with subscriptions. Stay tuned!</p></section></section></article></div></main></div><div class="viewport-bottom"><footer class="site-foot"><div class="site-foot-nav container"><div class="site-foot-nav-left"><a href="/">IRON</a> © 2021 — Published with <a class="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a></div><div class="site-foot-nav-right"><a class="site-foot-nav-item" href="/">Home</a><a class="site-foot-nav-item" href="/about/">About</a><a class="site-foot-nav-item" href="/tag/getting-started/">Collection</a><a class="site-foot-nav-item" href="/author/ghost/">Author</a><a class="site-foot-nav-item" href="/portal/">Portal</a></div></div></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/graphql-on-rails-from-zero-to-the-first-query/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-5694b3169301dd2e7763.js"],"app":["/app-70057629ec7fe707224c.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-63eb47fad528060152ad.js"],"component---src-pages-404-js":["/component---src-pages-404-js-32baf0e1e715afe4d428.js"],"component---src-templates-author-js":["/component---src-templates-author-js-eed2750fdff68f04c5a3.js"],"component---src-templates-index-js":["/component---src-templates-index-js-bc29c797e24d0f8222f6.js"],"component---src-templates-page-js":["/component---src-templates-page-js-999da13f0a1ec0ed0c09.js"],"component---src-templates-post-js":["/component---src-templates-post-js-08283f1381365564b879.js"],"component---src-templates-tag-js":["/component---src-templates-tag-js-fb5c185a940e29cd6a40.js"]};/*]]>*/</script><script src="/polyfill-5694b3169301dd2e7763.js" nomodule=""></script><script src="/component---src-templates-post-js-08283f1381365564b879.js" async=""></script><script src="/cb7ff614a03144592d7181ec1b235ec5408e91ad-3966412f7062066ccaa8.js" async=""></script><script src="/963770468657bcef9bfd35ecdfa091b18a4c2f64-6b2b27b7cee187fe53bc.js" async=""></script><script src="/app-70057629ec7fe707224c.js" async=""></script><script src="/framework-2763409ca69a4f35f52d.js" async=""></script><script src="/webpack-runtime-4b0c08519e9b01b13ec7.js" async=""></script></body></html>
