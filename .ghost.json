@@ -1,0 +1,10 @@
+{
+  "development": {
+    "apiUrl": "https://iron.fordeer.agency",
+    "contentApiKey": "1d0c42e811f96b474061f625d9"
+  },
+  "production": {
+    "apiUrl": "https://gatsby.ghost.io",
+    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+  }
+}
