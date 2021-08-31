@@ -26,7 +26,7 @@
     "dev": "gatsby develop",
     "lint": "eslint . --ext .js --cache",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "SITEURL=https://hungdinhvan.github.io gatsby build --prefix-paths && gh-pages -d public -b main"
+    "deploy": "GHOST_API_URL=https://iron.fordeer.agency GHOST_CONTENT_API_KEY=1d0c42e811f96b474061f625d9 SITEURL=https://hungdinhvan.github.io gatsby build --prefix-paths && gh-pages -d public -b main"
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",

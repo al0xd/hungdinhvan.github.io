@@ -75,6 +75,7 @@ typings/
 public
 yarn-error.log
 .netlify/
-
+mutagen.yml
+mutagen.yml.lock
 # Local Netlify folder
 .netlify
